@@ -1,0 +1,109 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .wrapper {
+        background-color: rgb(202, 204, 204);
+        width: 997px;
+        height: 700px;
+        margin: 0 auto;
+        padding: 30px;
+        padding: 30px;
+    }
+    
+    .paragraph1 {
+        width: 600px;
+        margin-bottom: 60px;
+        margin-right: 0;
+        float: left;
+    }
+    
+    .animals {
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: right;
+        margin: 0 auto 5px;
+        padding-right: 15px;
+        padding-bottom: 35px;
+        float: right;
+    }
+    
+    div>img {
+        width: 260px;
+        height: 200px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+    .cat {
+        margin: 10px 0 5px 5px;
+        background: #393566;
+        border-radius: 10px;
+    }
+    
+    .text {
+        color: white;
+        padding: 10px;
+        font-size: 15px;
+    }
+    
+    .paragraph2,
+    .paragraph3 {
+        width: 600px;
+        margin-bottom: 40px;
+    }
+    
+    @media only screen and (min-width: 600px) and (max-width: 800px) {
+        .wrapper {
+            width: auto;
+            height: auto;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        .paragraph {
+            display: flex;
+            flex-direction: column;
+        }
+        .cat {
+            width: auto;
+            height: auto;
+            margin: 20px;
+        }
+        .animals {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin: 5px;
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .wrapper {
+            width: auto;
+            height: auto;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        .paragraph {
+            width: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .cat {
+            width: auto;
+            height: auto;
+            margin: 20px;
+        }
+        .animals {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 5px;
+        }
+    }
